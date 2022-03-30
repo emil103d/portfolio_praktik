@@ -15,23 +15,48 @@
     />
   </head>
   <body>
-    <header>
+   <header>
       <div class="header_nav">
         <nav>
-          <ul>
-            <li id="about">
+          <ul class="desc_nav">
+            <li id="about" class="nav_btn nav_from_top">
               <a href="about.html">ABOUT</a>
             </li>
-            <li id="home">
-              <a href="index.html">FEAUTURED PROJECTS</a>
+            <li id="home" class="nav_btn nav_from_top">
+              <a class="nav_btn nav_from_top" href="feautured_projects.html"
+                >FEAUTURED PROJECTS</a
+              >
             </li>
-            <li id="contact">
+            <li id="contact" class="nav_btn nav_from_top">
               <a href="contact.html">CONTACT</a>
             </li>
           </ul>
         </nav>
         <div class="linje"></div>
       </div>
+
+      <div class="menuknap">
+        <div class="menuknap_burger"></div>
+      </div>
+      <ul id="menu" class="hidden">
+        <li>
+          <a class="nav_btn_burger nav_from_top_burger" href="about.html"
+            >ABOUT</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav_btn_burger nav_from_top_burger"
+            href="feautured_projects.html"
+            >FEATURED PROJECTS</a
+          >
+        </li>
+        <li>
+          <a class="nav_btn_burger nav_from_top_burger" href="contact.html"
+            >CONTACT</a
+          >
+        </li>
+      </ul>
     </header>
     <section class="main_header">
       <div class="bg_picture"></div>

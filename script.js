@@ -1,5 +1,32 @@
 const ScrollToTop = document.querySelector("#btnScrollToTop");
 
+// Burger menu
+const menuKnap = document.querySelector(".menuknap");
+let menuOpen = false;
+
+menuKnap.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuKnap.classList.add("open");
+    menuOpen = true;
+    document.querySelector("#menu").classList.remove("hidden");
+  } else {
+    menuKnap.classList.remove("open");
+    menuOpen = false;
+    document.querySelector("#menu").classList.add("hidden");
+  }
+});
+
+// Scrool to top
+
+ScrollToTop.addEventListener("click", () => {
+  // window.scrollTo(0, 0);
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
 // Based of youtube tutorial by Garry Simon
 // https://www.youtube.com/watch?v=FJ44qmE5odc
 
@@ -46,12 +73,3 @@ function paralax() {
     }
   }
 }
-
-ScrollToTop.addEventListener("click", () => {
-  // window.scrollTo(0, 0);
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
-});
