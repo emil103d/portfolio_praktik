@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="242" height="236" viewBox="0 0 242 236">
+  <defs>
+    <clipPath id="clip-favicon">
+      <rect width="242" height="236"/>
+    </clipPath>
+  </defs>
+  <g id="favicon" clip-path="url(#clip-favicon)">
+    <rect width="242" height="236" fill="#fff"/>
+    <circle id="Ellipse_30" data-name="Ellipse 30" cx="116.5" cy="116.5" r="116.5" transform="translate(5 2)" fill="#2e2727"/>
+  </g>
+</svg>

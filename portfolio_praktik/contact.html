@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+        <link rel="icon" type="image/x-icon" href="/img/favicon.svg" />
+  </head>
+  <body>
+   <header>
+      <div class="header_nav">
+        <nav>
+          <ul class="desc_nav">
+            <li id="about" class="nav_btn nav_from_top">
+              <a href="about.html">ABOUT</a>
+            </li>
+            <li id="home" class="nav_btn nav_from_top">
+              <a class="nav_btn nav_from_top" href="feautured_projects.html"
+                >FEAUTURED PROJECTS</a
+              >
+            </li>
+            <li id="contact" class="nav_btn nav_from_top">
+              <a href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="linje"></div>
+      </div>
+
+      <div class="menuknap">
+        <div class="menuknap_burger"></div>
+      </div>
+      <ul id="menu" class="hidden">
+        <li>
+          <a class="nav_btn_burger nav_from_top_burger" href="about.html"
+            >ABOUT</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav_btn_burger nav_from_top_burger"
+            href="feautured_projects.html"
+            >FEATURED PROJECTS</a
+          >
+        </li>
+        <li>
+          <a class="nav_btn_burger nav_from_top_burger" href="contact.html"
+            >CONTACT</a
+          >
+        </li>
+      </ul>
+    </header>
+    <section class="main_header">
+      <div class="bg_picture"></div>
+      <h1 class="contact_header">CONTACT</h1>
+      <h3 class="contact_header">EMILIE REVES CARLSEN</h3>
+      <div class="contact_info">
+          <h2>LETS WORK TOGETHER</h2>
+          <div class="flex_box">
+              <svg width="20" height="34" viewBox="0 0 80 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M72 0H8C3.6 0 0.04 3.6 0.04 8L0 56C0 60.4 3.6 64 8 64H72C76.4 64 80 60.4 80 56V8C80 3.6 76.4 0 72 0ZM72 16L40 36L8 16V8L40 28L72 8V16Z" fill="black"/>
+</svg>
+  <p>  <a
+                  href="mailto:emilie@revescarlsen.dk?subject = Feedback&body = Message"
+                >
+                  emilie@revescarlsen.dk
+                </a></p>
+   </div>
+  <div class="flex_box">
+      <svg width="20" height="34" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="96" height="96" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_114_541" transform="scale(0.0104167)"/>
+</pattern>
+<image id="image0_114_541" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAESElEQVR4nO2d3YtWVRSHH2d0qJwpafLCHD+xj9FM0ww0UQO9lLKIpNsoL70S8V76B4LKe5U+QBO10QsRQ1QUbASVuikDSRnLcAZRTOf1Ys2L+jrM2We/++ucvR7Yd2fW+Z31e8/X2mufAUVRFEVRFEVRFEVRFEWZmHnAXuA60LAcI8BPwPzA2ivPG8At7BPfOoaBBUGPoOIcwl3ym2Mg6BFUnGHcG3AP6Ax5EKnQYfE3zzlXAVOAFzzETR4bA+45VyH4MDZ5UjJgqqe4SWNjwB3nKoRuT3GTxsaAm85VCC95ips0Ngb861yF0OcpbtLYGPCPcxXCTE9xk8bGgKvOVQizPcVNGhsD/nKuQnjbU9yksTHginMVwmLgeU+xk8XGgN+dqxA6gHc8xU4WWwN8vYyt8xS3dlzAfUGuAfwa8iBSwOYMADHAB0vI7HHU1oDTTlU8YhKw1lPsJLE14JRTFU8yw2Ps5LA14CIyLekDX09ZtWMf7m/Cl5HJmWywPQMAjjpTIQwBHwH/O45bW+bg7pc/hLwJKyU5T/vJvwksCy28Luyg/eQvD666RszHPvn/ocl3whnskp9l+dkHn1M++SuiKK0p3Zh3y2nyPfEtesONyuvAKBMbcCCaukw4TPFZsCGaugxYS7EBg2TaBR2K4xSbsCWaugxYg1ndpzeWwBwYoNiE76Kpy4B+pKRcZMInsQTmwNeYvZRl2ZAbgl7kWl9kwgDtTQpVHl+PhHeQNcSbCrZbgBhw3JOO7DlK8VkwCnwYS2DdmYks6CgyYQRZAK544FPMKqV/kFlXXEj2YmbCJTJdK+abbiS5JiYMAtPiyKw3/ci13sSEX8hwsUYINgEPMDPhHH4vR13A+8A25D6Vzf1nG2YGNJBWRR+JWQj81rKvUWR9wpfAeqDHw36fYlKInYzDLuALw22vABuRhmAXLAaOAdMLtnswts+zyMrQq8DfwA3gNnAXaVAeAe470haMTuAHzM+EEaRvtF3exKxEUmbcR144K/fRqS7gZ8wPdBTYiX3taAny63WZ/MfHMBX8/NqzlDOhARwBXi65n6XICn9fyW+O/SV1JUEX5S5HDaS8sdkw/luESX7zLKgknZj1FrWO75l4enMZZrUol6PSbMX8PeHxs2ErT5fWQ/7ya2MAwAfYfRhwEHhvLMZypBMvdPJrYQBIp51p7ah1HCBe8mtjAEgBbzfxEpm9AU0+JvyNVA1oYRby/B87udka0GQjUpOJneRsDQB4EfgKs+YvNcAj/Zi1xKsBnlkJHCR+4rM1oMlqxIiyb9JqgGNeA77BfP5ZDfBED/AZ8m0jNSAyc5CC3UmKFxO2M66FOqAq04ecGT/ivma0p6yYWJPyqdCBPM6+C6xC5owXIZNEZbmFlMD/LPNHuRswHpOBV4FXgLnIv+zqQ3qUesfGM2Pb9SA3+xPAdqSNRlEURVEURVEURVEURVHG5SHO0bLslgejNQAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
+   <p><a href="tel:42455420">+45 42 45 54 20</a></p>
+  </div>
+         <div class="flex_box">
+<svg width="20" height="34" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.6 20C7.6 13.16 13.16 7.6 20 7.6H36V0H20C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40H36V32.4H20C13.16 32.4 7.6 26.84 7.6 20ZM24 24H56V16H24V24ZM60 0H44V7.6H60C66.84 7.6 72.4 13.16 72.4 20C72.4 26.84 66.84 32.4 60 32.4H44V40H60C71.04 40 80 31.04 80 20C80 8.96 71.04 0 60 0Z" fill="black"/>
+</svg>
+
+
+
+  <a href="https://www.linkedin.com/in/emilie-reves-carlsen-519621212/">Linkedin</a>
+         </div>
+
+         <div class="flex_box"> <img class="git_pic" src="img/github.png" alt="">
+ <a href="https://github.com/emil103d">Github</a></div>
+      </div>
+
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="linje"></div>
+        <p>// EMILIE REVES CARLSEN 2022 //</p>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
